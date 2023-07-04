@@ -18,7 +18,7 @@ Let's talk! ü
 <a href="https://ryecorral.github.io/mp2/home"># Mini-Project</a>
 </dt>
 <dt>
-<a href="[https://ryecorral.github.io/capstone/home](https://etiket-com-mu.vercel.app/?fbclid=IwAR3QaMzU2ISQ3g-lgusgP7HLWnShxRH2xnzXnXPVK_od1X_4OfefXvKUZ-0)https://etiket-com-mu.vercel.app/?fbclid=IwAR3QaMzU2ISQ3g-lgusgP7HLWnShxRH2xnzXnXPVK_od1X_4OfefXvKUZ-0"># Capstone Project (Collaboration work of Team IceCode)</a>
+<a href="https://etiket-com-mu.vercel.app/?fbclid=IwAR3QaMzU2ISQ3g-lgusgP7HLWnShxRH2xnzXnXPVK_od1X_4OfefXvKUZ-0"># Capstone Project (Collaboration work of Team IceCode)</a>
 </dt>
 </body>
 </html>
