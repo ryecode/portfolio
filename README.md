@@ -12,7 +12,7 @@ Check out my work! ü
   
 </p>
 <dt>
-<a href="https://ryecode.github.io/portfolio/home" target="_blank" ># My Profile</a>
+<a href="https://ryecode.github.io/portfolio/home" target="_blank" ># My Portfolio</a>
 </dt>
 <dt>
 <a href="https://ryecorral.github.io/mp2/home" target="_blank" ># KodeGo Bootcamp Mini-Project</a>
