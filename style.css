@@ -660,7 +660,7 @@ body {
   display: inline-flexbox;
   width: max-content;
   font-size: small;
-  background-image: url("https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png");
+  background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -792,7 +792,7 @@ body {
     left: 40%;
     color: hsl(45, 100%, 53%);
     text-shadow: 2 black;
-    background-image: url("https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png");
+    background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
