@@ -528,7 +528,7 @@ body {
     
     .card {
         position: relative;
-        margin: 0;
+        margin: 15px 0px 0px 0px;
         padding: 0;
         background: rgba(black, .7);
         text-align: center;
@@ -641,8 +641,9 @@ body {
 }
 
 .sub {
-  margin-top: 20px;
-  margin-left: 40px;
+  margin-top: 0px;
+  margin-left: 30px;
+  padding-top: 30px;
 }
 
 #moreBtn 
@@ -659,7 +660,6 @@ body {
   display: inline-flexbox;
   width: max-content;
   font-size: small;
-  /* background: transparent; */
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -716,10 +716,80 @@ body {
   opacity: 1;
 }
 
+#moreBtn1 
+{
+  position: relative;
+  top: 90%;
+  left: 1%;
+  right: 0%;
+  color: hsl(45, 100%, 53%);
+  text-shadow: 2 black;
+  transition: opacity ease-out 250ms;
+  width: 50%;
+  z-index: 1;
+  display: inline-flexbox;
+  width: max-content;
+  font-size: small;
+  background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border: hsl(45, 100%, 53%) 0.125em solid;
+  text-shadow: 
+  0 0 0,
+  0 0 0;
+  box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);
+}
+#moreBtn1::before {
+  pointer-events: none; /*use this string to avoid pointer change outside button */
+  content: '';
+  position: absolute;
+  background: hsl(45, 100%, 53%);
+  top: 90%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+#moreBtn1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow:  0 0 2em 0.5em hsl(45, 100%, 53%);
+  opacity: 0;
+  transition: ease 100ms linear;
+  background-color: hsl(45, 100%, 53%);
+  z-index: -1;
+}
+
+#moreBtn1:hover, 
+#moreBtn1:focus {    
+  color: black;
+  text-shadow: 0 0 0.1em black;    
+}
+
+#moreBtn1:hover::before,
+#moreBtn1:focus::before {
+  opacity: 1;
+}
+
+#moreBtn1:hover::after,
+#moreBtn1:focus::after {
+  opacity: 1;
+}
+
 @media (max-width: 770px) {
   #moreBtn 
   {
-    left: 20%;
+    left: 40%;
     color: hsl(45, 100%, 53%);
     text-shadow: 2 black;
     background-image: url("https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png");
@@ -735,6 +805,29 @@ body {
     background: hsl(45, 100%, 53%);
   }  
   #moreBtn::after {
+    box-shadow:  0 0 2em 0.5em hsl(45, 100%, 53%);
+    background-color: hsl(45, 100%, 53%);
+    z-index: -1;
+  }  
+
+  #moreBtn1
+  {
+    left: 0.5%;
+    color: hsl(45, 100%, 53%);
+    text-shadow: 2 black;
+    background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    border: hsl(45, 100%, 53%) 0.125em solid;
+    box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);
+  }
+  #moreBtn1::before {
+    background: hsl(45, 100%, 53%);
+  }  
+  #moreBtn1::after {
     box-shadow:  0 0 2em 0.5em hsl(45, 100%, 53%);
     background-color: hsl(45, 100%, 53%);
     z-index: -1;
