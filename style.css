@@ -719,7 +719,7 @@ body {
 @media (max-width: 770px) {
   #moreBtn 
   {
-    left: 15%;
+    left: 20%;
     color: hsl(45, 100%, 53%);
     text-shadow: 2 black;
     background-image: url("https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png");
@@ -782,7 +782,7 @@ body {
     font-family: "Source Code Pro", monospace;
     position: relative;
     width: 100%;
-    color: black;
+    color: rgb(24, 2, 96);
     font-weight: 900;
 }
 
