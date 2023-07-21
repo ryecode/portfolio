@@ -6,11 +6,6 @@
 html
 { 
   height: 100%;
-  /* background-image: url("https://ryecorral.github.io/ImageBank/AboutBG.jpg");
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
 }
 
 body {
@@ -474,7 +469,7 @@ body {
 
     .welcome
     {
-      font-size: 25px;
+      /* font-size: 25px; */
       opacity: 0;
       transform: translateY(0rem);
       animation: scale 5s ease 
@@ -564,48 +559,27 @@ body {
         transform: scale(1, 1.05);
     }
 
-    .cardAbout {
-      position: relative;
-      margin: 15px 0px 0px 0px;
-      padding: 0;
-      background: rgba(black, .7);
+/* FOR MY PROFILE */
+    .profileTitle
+    {
+      /* font-size: 25px; */
+      opacity: 0;
+      transform: translateY(0rem);
+      animation: scale 5s ease 
+      calc(var(--typewriterSpeed) + 1.5s) forwards;
+      animation-iteration-count: infinite;
+      animation-timing-function: var(--typewriterSteps);
+      color: black;
+      font-weight: 900;
+      text-shadow: 
+      0 0 0.11em whitesmoke,
+      0 0 1em hsl(45, 100%, 53%);
       text-align: center;
-      box-shadow: 0 0 0.5em 0 black;
-  }
-  
-  .cardAbout::after 
-  {
-      content: '';
-      position: absolute;
-      top: 1.25em;
-      bottom: 1.25em;
-      left: 1.25em;
-      right: 1.25em;    
-      transform: scale(1, 0);
-      transition: transform ease-in-out 250ms;
-      border-left: 3px solid green;
-      border-right: 3px solid green;
-  
-  }
-  .cardAbout::before
-  {
-      content: '';
-      position: absolute;
-      top: 1.25em;
-      bottom: 1.25em;
-      left: 1.25em;
-      right: 1.25em; 
-      transform: scale(0, 1);
-      transition: transform ease-in-out 250ms;
-      border-top: 3px solid green;
-      border-bottom: 3px solid green;
-  }
-  
-  .cardAbout:hover::before
-  {
-      transform: scale(1.05, 1);
-  }
-  
+      margin: 50px 0 2px 0;
+      width: 100%;
+    }
+
+    
   .card1:hover::after
   {
       transform: scale(1, 1.05);
@@ -627,7 +601,7 @@ body {
         border: none;
     }
     /* to make text more readable */
-    .card:hover .cardImage  
+    .card:hover .cardImage
     {
         opacity: 0.4;
     }
@@ -918,12 +892,13 @@ body {
 }
 
 #ryePic {
-  float: right;
+  float: center;
   width: 20%;
   height: 250px;
   border-radius: 50px;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-bottom: 10px;
+  margin-top: 10px;
   animation: flip 5s;
   animation-iteration-count: infinite;
 }
@@ -938,9 +913,21 @@ body {
   display: flex;
 }
 
+.profileText
+{
+  color: black;
+  text-shadow: 
+  0 0 0.11em whitesmoke,
+  0 0 1em hsl(45, 100%, 53%);
+
+  font-weight: 600;
+  font-size: 0.95em;
+  opacity: 1;
+}
+
 @media (max-width: 770px) {
   #ryePic {
-    width: 100%;
+    width: 80%;
     height: 200px;
     border-radius: 50px;
   }
