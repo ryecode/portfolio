@@ -482,7 +482,7 @@ body {
       0 0 0.11em whitesmoke,
       0 0 1em hsl(45, 100%, 53%);
       text-align: center;
-      margin: 2px 0 2px 0;
+      margin: 2px 0 0px 0;
       width: 100%;
     }
 
@@ -572,12 +572,64 @@ body {
       color: black;
       font-weight: 900;
       text-shadow: 
-      0 0 0.11em whitesmoke,
-      0 0 1em hsl(45, 100%, 53%);
+      0 0 0.5em hsl(45, 100%, 53%),
+      0 0 1.5em hsl(45, 100%, 53%);
       text-align: center;
       margin: 50px 0 2px 0;
       width: 100%;
     }
+
+    .cardProfile {
+      position: relative;
+      margin: 15px 0px 0px 0px;
+      padding: 0;
+      background: rgba(black, .7);
+      text-align: center;
+      box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);
+  }
+  
+  .cardProfile::after 
+  {
+      content: '';
+      position: absolute;
+      top: 1.25em;
+      bottom: 1.25em;
+      left: 1.25em;
+      right: 1.25em;    
+      transform: scale(1, 0);
+      transition: transform ease-in-out 250ms;
+      border-left: 3.5px solid hsl(45, 100%, 53%);
+      border-right: 3.5px solid hsl(45, 100%, 53%);
+  
+  }
+  .cardProfile::before
+  {
+      content: '';
+      position: absolute;
+      top: 1.25em;
+      bottom: 1.25em;
+      left: 1.25em;
+      right: 1.25em; 
+      transform: scale(0, 1);
+      transition: transform ease-in-out 250ms;
+      border-top: 3.5px solid hsl(45, 100%, 53%);
+      border-bottom: 3.5px solid hsl(45, 100%, 53%);
+  }
+  
+  .cardProfile:hover::before
+  {
+      transform: scale(1.05, 1);
+  }
+  
+  .cardProfile:hover::after
+  {
+      transform: scale(1, 1.05);
+  }
+  .cardProfile:hover
+  {
+      opacity: 0.4;
+      opacity: 1;
+  }
 
     
   .card1:hover::after
@@ -591,7 +643,7 @@ body {
         display: flex;
         position: absolute;
         transition: opacity ease-out 250ms;
-        opacity: 0.7;
+        opacity: 0.8;
         align-self: center;
         height: 100%;
         width: 100%;
@@ -603,13 +655,13 @@ body {
     /* to make text more readable */
     .card:hover .cardImage
     {
-        opacity: 0.4;
+        opacity: 0.3;
     }
 
     .cardText
     {
       position: absolute;
-      top: 57%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: black;
@@ -854,7 +906,7 @@ body {
 .about
 {
   margin: 30px 0 10px 0;
-  background: linear-gradient(to right bottom,rgb(206, 157, 12) 70%, rgb(125, 94, 2));
+  background: linear-gradient(to right bottom,rgb(53, 40, 1) 70%, rgb(4, 3, 0));
   /* border-radius: 10px; */
   box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);  
   width: 100%;
@@ -865,13 +917,16 @@ body {
 
 .aboutTitle 
 {
-    font-size: 2.1rem;
-    font-weight: bolder;
+    font-size: 2.5rem;
+    font-weight: 900;
     position: relative;
     font-family: "Source Code Pro", monospace;
     width: 100%;
-    color: rgb(24, 2, 96);
-    font-weight: 900;
+    color: hsl(45, 100%, 53%);
+    text-shadow: 
+    0 0 0.11em whitesmoke,
+    0 0 1em hsl(45, 100%, 53%);
+    padding-top: 20px;
 }
 
 .aboutTitle::before,
@@ -885,10 +940,13 @@ body {
 }
 
 .aboutTitle::before {
-    background-color: rgb(206, 157, 12);
+    background-color: rgb(53, 40, 1);
+    height: 120px;
+    transform: translateY(-10px);
     animation: typewriter 5s steps(17) 2s forwards;
     animation-iteration-count: infinite;
     animation-timing-function: var(--typewriterSteps);
+    
 }
 
 #ryePic {
@@ -917,7 +975,7 @@ body {
 {
   color: black;
   text-shadow: 
-  0 0 0.11em whitesmoke,
+  0 0 0.11em hsl(45, 100%, 53%),
   0 0 1em hsl(45, 100%, 53%);
 
   font-weight: 600;
@@ -943,7 +1001,22 @@ body {
     perspective: 1000px;
     margin-left: 1%;
   }
+
+  #cardQuery {
+    transform: translateY(65px);
+    opacity: 1;
+    width: 300%;
+  }
+
+  #contactCardQuery {
+    margin-left: 15px;
+  }
+
   
+}
+
+#cardQuery {
+  opacity: 1;
 }
 
 /* ///////////////////////////////// FOOTER /////////////////////////////////  */
