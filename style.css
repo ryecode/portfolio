@@ -455,16 +455,6 @@ body {
         animation-iteration-count: initial;
         text-align: center;
       }
-    
-      @media (max-width: 770px) {
-        .loading 
-        {
-          width:198px;
-          height:198px;
-          margin-left: -90px;
-        }
-
-      }
 
 
     .welcome
@@ -661,7 +651,7 @@ body {
     .cardText
     {
       position: absolute;
-      top: 55%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: black;
@@ -703,7 +693,7 @@ body {
   z-index: 1;
   display: inline-flexbox;
   width: max-content;
-  font-size: small;
+  font-size: x-large;
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -764,7 +754,7 @@ body {
 {
   position: relative;
   top: 90%;
-  left: 1%;
+  left: 25%;
   right: 0%;
   color: hsl(45, 100%, 53%);
   text-shadow: 2 black;
@@ -773,7 +763,7 @@ body {
   z-index: 1;
   display: inline-flexbox;
   width: max-content;
-  font-size: small;
+  font-size: x-large;
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -833,7 +823,7 @@ body {
 @media (max-width: 770px) {
   #moreBtn 
   {
-    left: 20%;
+    left: -1.5%;
     color: hsl(45, 100%, 53%);
     text-shadow: 2 black;
     background-image: url("https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png");
@@ -856,7 +846,7 @@ body {
 
   #moreBtn1
   {
-    left: 0.5%;
+    left: -2%;
     color: hsl(45, 100%, 53%);
     text-shadow: 2 black;
     background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
@@ -876,6 +866,23 @@ body {
     background-color: hsl(45, 100%, 53%);
     z-index: -1;
   }  
+
+  /* carousel items */
+  #logoQuery {
+    left: -25%;
+  }
+  #picQuery {
+    left: -20%;
+  }
+  #tictacPicQuery {
+    left: -30%;
+  }
+  #skillsPicQuery {
+    left: -20%;
+    top: 60%;
+  }
+
+
 }
 
 #subscribe:hover { 
@@ -896,9 +903,10 @@ body {
   border: none;
   text-shadow: 1 hsl(45, 100%, 53%);
   /* display: flex; */
-  margin-top: 5px;
+  margin-top: 25px;
   margin-left: 30px;
   padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* ///////////////////////////////// PROFILE PAGE /////////////////////////////////  */
@@ -1012,7 +1020,13 @@ body {
     margin-left: 15px;
   }
 
-  
+  .loading 
+  {
+    width:198px;
+    height:198px;
+    margin-left: -90px;
+  }
+
 }
 
 #cardQuery {

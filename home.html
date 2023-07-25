@@ -61,7 +61,8 @@
           <b>I'am Ryan Corral</b>
       </h1>
       <p class="subtitle ">And I'm a Full Stack Web Developer</p>
-      <button class="neon-button" >
+      <button class="neon-button"
+              style="background-image: url('https://ryecode.github.io/portfolio/ImageBank/blueCarbonBG.jpg');" >
         <a style="text-decoration: none; 
           text-shadow: none;
           color: red;"
@@ -85,7 +86,7 @@
                 text-align: center; 
                 transform: translateX(-110%);">
         <div class="card1" style="width: 100%;" >
-          <div class="card" style="height: 300px;">
+          <div class="card" style="height: 350px;">
             <img src="https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png" alt="galaxy image" class="cardImage">
             <div class="cardBody">
               <div class="welcome">
@@ -103,14 +104,17 @@
                                                
               </p>  
             </div>
+            <div class="sub">        
+              <a href="#aboutMe" class="neon-button2 btn btn-primary" id="moreBtn">Know more about me</a>       
+            </div>
           </div>
         </div>
-        <div class="sub">        
-          <a href="#aboutMe" class="neon-button2 btn btn-primary" id="moreBtn">Know more about me</a>       
-        </div>
+
       </div>  
  
-      <div class="col-sm-6" style="height: 400px;">
+      <div class="col-sm-6" 
+           style="height: 400px;
+                  margin-top: 10px;">
         <div class="sub">        
           <a href="https://ryecode.github.io/portfolio/portfolio/projects" 
             class="neon-button2 btn btn-primary" id="moreBtn1">
@@ -120,62 +124,128 @@
         <div class="card" 
             style="height: 300px; 
                     width: 100%;
+                    z-index: -1;
                     animation: crashRight 3s ease-in calc(var(--typewriterSpeed) + 1.1s) forwards;
-                    animation-iteration-count: initial;transform: translateX(120%);">
+                    animation-iteration-count: initial;
+                    transform: translateX(120%);">
           <img src="https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg" alt="" class="cardImage">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="click" >
               <div class="carousel-inner">
-                <!-- <h1 style="margin-top: 15px;margin-bottom: 0px;">-- Rye Skills --</h1> -->
-                                <div class="carousel-item active"  data-bs-interval="3000" style="width: 75%;">
-                  <img src="https://ryecode.github.io/portfolio/ImageBank/LogoGithub.png" 
+                <div class="carousel-item"  
+                     data-bs-interval="3000"
+                     id="logoQuery" 
+                     style="width: 40%;
+                            height: 70%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png" 
                       class="d-block w-100" 
                       alt="..."  
-                      style="height: 200px;
-                          margin-left: 40px;
-                          margin-bottom: 30px">
+                      style="margin-left: 200px;
+                             margin-top: 40px;
+                             height: 200px;">
                 </div>
-                <div class="carousel-item" data-bs-interval="3000" style="width: 75%;">
-                  <img src="https://ryecode.github.io/portfolio/ImageBank/LogoBasket.png" 
+                <div class="carousel-item active"       
+                     data-bs-interval="3000"
+                     id="picQuery"
+                     style="width: 50%;
+                            height: 50%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/RyePicTech.png" 
+                      class="d-block w-100" 
+                      alt="..."                         
+                      style="margin-left: 170px;
+                             margin-right: 50px;
+                             margin-top: 30px;
+                             height: 240px;
+                             border-radius: 20px;">
+                </div>
+                <div class="carousel-item"    
+                     data-bs-interval="3000" 
+                     id="picQuery"
+                     style="width: 60%;
+                            height: 70%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/RyePortfolioPC.jpeg" 
                       class="d-block w-100" 
                       alt="..."  
-                      style="height: 200px;
-                          margin-left: 40px;
-                          margin-bottom: 30px">
+                      style="height: 245px;
+                             margin-left: 150px;
+                             margin-top: 25px;
+                             margin-right: 150px;
+                             border-radius: 5px;">
                 </div>
-                <div class="carousel-item"  data-bs-interval="3000" style="width: 75%;">
-                  <img src="https://ryecode.github.io/portfolio/ImageBank/LogoAuto.png" 
+                <div class="carousel-item"    
+                     data-bs-interval="3000" 
+                     id="picQuery"
+                     style="width: 60%;
+                            height: 70%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/EtiketPC.jpeg" 
                       class="d-block w-100" 
                       alt="..."  
-                      style="height: 200px;
-                          margin-left: 40px; 
-                          margin-bottom: 30px">
+                      style="height: 245px;
+                             margin-left: 150px;
+                             margin-top: 25px;
+                             margin-right: 150px;
+                             border-radius: 5px;">
                 </div>
-                <div class="carousel-item"  data-bs-interval="3000" style="width: 75%;">
-                  <img src="https://ryecode.github.io/portfolio/ImageBank/htmlCss.png" 
+                <div class="carousel-item"  
+                     data-bs-interval="3000"
+                     id="tictacPicQuery" 
+                     style="width: 40%;
+                            height: 70%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/RyeTicTacToeSS.jpeg" 
                       class="d-block w-100" 
                       alt="..."  
-                      style="height: 200px; 
-                          margin-bottom: 30px;
-                          text-align: center;
-                          margin-left: 45px;">
+                      style="height: 245px;
+                             margin-left: 220px;
+                             margin-top: 25px;
+                             margin-right: 150px;">
                 </div>
-                <div class="carousel-item"  data-bs-interval="3000" style="width: 75%;">
-                  <img src="https://ryecode.github.io/portfolio/ImageBank/javaScript.png" 
+                <div class="carousel-item"  
+                     data-bs-interval="3000" 
+                     id="skillsPicQuery"
+                     style="width: 60%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/codingSkills.jpeg" 
                       class="d-block w-100" 
                       alt="..."  
-                      style="height: 200px;  
-                      margin-bottom: 30px;
-                      margin-left: 40px;">
+                      style="margin-left: 150px;
+                             margin-top: 50px;
+                             margin-right: 150px;
+                             border-radius: 5px;">
                 </div>
+                <div class="carousel-item"  
+                     data-bs-interval="3000" 
+                     id="skillsPicQuery"
+                     style="width: 60%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg" 
+                      class="d-block w-100" 
+                      alt="..."  
+                      style="margin-left: 150px;
+                             margin-top: 50px;
+                             margin-right: 150px;
+                             border-radius: 5px;
+                             height: 200px;">
+                </div>
+                <div class="carousel-item"  
+                     data-bs-interval="3000" 
+                     id="skillsPicQuery"
+                    style="width: 60%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/BestCodingSS.jpg" 
+                      class="d-block w-100" 
+                      alt="..."  
+                      style="margin-left: 150px;
+                      margin-top: 50px;
+                      margin-right: 150px;
+                      border-radius: 50px;
+                      height: 200px;">
+                </div>
+
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>        
+              </button>         -->
           </div>
         </div>
       </div>
