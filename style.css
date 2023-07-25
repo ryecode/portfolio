@@ -683,8 +683,8 @@ body {
 #moreBtn 
 {
   position: relative;
-  top: 75%;
-  left: 30%;
+  top: 85%;
+  left: 25%;
   right: 0%;
   color: hsl(45, 100%, 53%);
   text-shadow: 2 black;
