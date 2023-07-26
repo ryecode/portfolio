@@ -175,7 +175,7 @@ body {
 
 .neon-button:hover, 
 .neon-button:focus {    
-  color: black;
+  color: blue;
   text-shadow: none;    
 }
 
@@ -633,7 +633,7 @@ body {
       display: flex;
       position: absolute;
       transition: opacity ease-out 250ms;
-      opacity: 0.8;
+      opacity: 1;
       align-self: center;
       height: 100%;
       width: 100%;
@@ -684,7 +684,7 @@ height: 250px;
 {
 position: relative;
 top: 85%;
-left: 25%;
+left: 20%;
 right: 0%;
 color: hsl(45, 100%, 53%);
 text-shadow: 2 black;
@@ -693,7 +693,7 @@ width: 50%;
 z-index: 1;
 display: inline-flexbox;
 width: max-content;
-font-size: x-large;
+font-size: xx-large;
 background-image: url("https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png");
 background-position: bottom;
 background-repeat: no-repeat;
@@ -736,7 +736,7 @@ z-index: -1;
 
 #moreBtn:hover, 
 #moreBtn:focus {    
-color: black;
+color: aliceblue;
 text-shadow: 0 0 0.1em black;    
 }
 
@@ -754,7 +754,7 @@ opacity: 1;
 {
 position: relative;
 top: 90%;
-left: 25%;
+left: 5%;
 right: 0%;
 color: hsl(45, 100%, 53%);
 text-shadow: 2 black;
@@ -763,7 +763,7 @@ width: 50%;
 z-index: 1;
 display: inline-flexbox;
 width: max-content;
-font-size: x-large;
+font-size: xx-large;
 background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
 background-position: top;
 background-repeat: no-repeat;
@@ -806,7 +806,7 @@ z-index: -1;
 
 #moreBtn1:hover, 
 #moreBtn1:focus {    
-color: black;
+color: aliceblue;
 text-shadow: 0 0 0.1em black;    
 }
 
@@ -1036,13 +1036,13 @@ opacity: 1;
 /* ///////////////////////////////// PROJECTS SECTION /////////////////////////////////  */
 
 .cards {
-width: 300px;
-height: 500px;
+width: 325px;
+height: 550px;
 position: relative;
 isolation: isolate;
 overflow: hidden;
 border-radius: 20px;
-margin-left: 25px;
+margin-left: 15px;
 z-index: 1;
 }
 .card-image {
