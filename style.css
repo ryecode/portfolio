@@ -465,7 +465,7 @@ body {
     animation: scale 5s ease 
     calc(var(--typewriterSpeed) + 1.5s) forwards;
     animation-iteration-count: infinite;
-    animation-timing-function: var(--typewriterSteps);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     color: black;
     font-weight: 900;
     text-shadow: 
@@ -558,7 +558,7 @@ body {
     animation: scale 5s ease 
     calc(var(--typewriterSpeed) + 1.5s) forwards;
     animation-iteration-count: infinite;
-    animation-timing-function: var(--typewriterSteps);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     color: black;
     font-weight: 900;
     text-shadow: 
@@ -571,7 +571,7 @@ body {
 
   .cardProfile {
     position: relative;
-    margin: 15px 0px 0px 0px;
+    margin: 15px 0px 250px 0px;
     padding: 0;
     background: rgba(black, .7);
     text-align: center;
@@ -693,7 +693,7 @@ width: 50%;
 z-index: 1;
 display: inline-flexbox;
 width: max-content;
-font-size: xx-large;
+font-size: x-large;
 background-image: url("https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png");
 background-position: bottom;
 background-repeat: no-repeat;
@@ -763,7 +763,7 @@ width: 50%;
 z-index: 1;
 display: inline-flexbox;
 width: max-content;
-font-size: xx-large;
+font-size: x-large;
 background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
 background-position: top;
 background-repeat: no-repeat;
@@ -846,7 +846,7 @@ opacity: 1;
 
 #moreBtn1
 {
-  left: -2%;
+  left: 5%;
   color: hsl(45, 100%, 53%);
   text-shadow: 2 black;
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
@@ -885,27 +885,32 @@ opacity: 1;
 
 }
 
-#subscribe:hover { 
+.subscribe:hover 
+{ 
 animation: shake 0.5s;
-animation-iteration-count: infinite;}
+animation-iteration-count: infinite;
+z-index: 1;
+}
 
-#subscribe
-{ animation: spin 3.25s ease calc(var(--typewriterSpeed) + 0.75s) forwards;
-animation-iteration-count: initial;}
+.subscribe
+{ animation: spin 3.25s ease 0.5s forwards;
+  animation-iteration-count: initial;
+  z-index: 1;
+}
 
 .sub
 {
 opacity: 0;
 transform: translatex(100%);
 animation: scale 1s ease-in-out 
-calc(var(--typewriterSpeed) + 0.75s) forwards;
+0.5s forwards;
 background: transparent;
-border: none;
-text-shadow: 1 hsl(45, 100%, 53%);
-margin-top: 5px;
+margin-top: 0px;
 margin-left: 30px;
-padding-top: 10px;
-margin-bottom: 10px;
+padding-top: 0px;
+margin-bottom: 5px;
+z-index: 1;
+pointer-events: all;
 }
 
 /* ///////////////////////////////// PROFILE PAGE /////////////////////////////////  */
@@ -924,18 +929,32 @@ display: flexbox;
 
 .aboutTitle 
 {
-  font-size: 2.5rem;
-  font-weight: 900;
+  font-size: 3rem;
+  font-weight: bolder;
   position: relative;
   font-family: "Source Code Pro", monospace;
-  width: 100%;
-  color: hsl(45, 100%, 53%);
+  width: max-content;
+  color: black;
   text-shadow: 
-  0 0 0.11em whitesmoke,
+  0 0 0.11em hsl(45, 100%, 53%),
   0 0 1em hsl(45, 100%, 53%);
   padding-top: 20px;
+  margin-top: 10px;
+  margin-left: 580px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(237, 232, 232, 0.987);
+  border-radius: 10px;
+  border: solid white ;
+  border-width: 1px;
+  box-shadow: -1px 5px 0.1em rgba(40, 39, 39, 0.528);
+  height: 105px;
+  animation: scale 5s linear 0s forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
 }
-
+/* 
 .aboutTitle::before,
 .aboutTitle::after {
   content: '';
@@ -947,14 +966,18 @@ display: flexbox;
 }
 
 .aboutTitle::before {
-  background-color: rgb(53, 40, 1);
-  height: 120px;
-  transform: translateY(-10px);
+  background-color: rgba(237, 232, 232, 0.987);
+  border-radius: 10px;
+  border: solid white ;
+  border-width: 1px;
+  box-shadow: -1px 5px 0.1em rgba(40, 39, 39, 0.528);
+  height: 105px;
+  transform: translateY(-5px);
   animation: typewriter 5s steps(17) 2s forwards;
   animation-iteration-count: infinite;
   animation-timing-function: var(--typewriterSteps);
   
-}
+} */
 
 #ryePic {
 float: center;
@@ -1026,6 +1049,20 @@ opacity: 1;
   margin-left: -90px;
 }
 
+#projectsQuery {
+  transform: translateX(-100px);
+}
+
+#heroQuery {
+  width: 100%;
+}
+
+.back2TopQuery
+{
+  text-align: right;
+  margin-top: 5px;
+}
+
 }
 
 #cardQuery {
@@ -1062,7 +1099,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 padding: 10px;
-padding-top: 70%;
+padding-top: 60%;
 background-image: linear-gradient(0,rgba(240, 169, 1, 0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.7),rgb(240, 169, 1,0.4),rgb(240, 169, 1,0.2),rgb(240, 169, 1,0.1),transparent);
 color: black;
 opacity: 0;
@@ -1078,7 +1115,7 @@ width: 50%;
 font-size: 30px;
 }
 .hover-btn {
-width: 30%;
+width: 50%;
 color: black;
 display: grid;
 place-items: center;
@@ -1089,7 +1126,7 @@ text-decoration: none;
 font-size: 25px;
 font-weight: 500;
 box-sizing: content-box;
-padding:5px 10px;
+padding:5px 5px;
 }
 .hover-description {
 width: 100%;
@@ -1103,7 +1140,7 @@ color: black;
   {
     background-color: #504f4f;
     position: relative;
-    height: 50px;
+    height: 120px;
     margin-top: 10px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -1130,6 +1167,8 @@ color: black;
   {
     text-align: right;
     margin-top: 5px;
+    transform: translateY(-80%);
+
   }
 
 .neon-button2,
@@ -1141,7 +1180,7 @@ color: black;
 
 .neon-button2 {
     background-color: transparent;
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     font-family:'Source Sans Pro', sans-serif;
     color: rgb(0, 7, 13);
     display: inline-block;
