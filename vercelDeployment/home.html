@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Corral Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://ryecode.github.io/portfolio/ImageBank/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://ryecode.github.io/portfolio/ImageBank/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://ryecode.github.io/portfolio/ImageBank/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+</head>
+<body>
+<header>
+
+                                        <!-- NAVIGATION BAR -->                                        
+<div >
+  <nav class="top-nav fixed-top navbar-expand-lg bg-body-tertiary" >
+      <div class="container-fluid" 
+           style="padding-left: 10px;
+                  padding-top: 5px;
+                  padding-bottom: 5px;">
+          <a href="https://ryecode.github.io/portfolio/home">
+            <img class="RyeLogo" 
+              src="https://ryecode.github.io/portfolio/ImageBank/RYELogoBLackSphere.png" 
+              alt="RYE Logo" 
+              height="40px" 
+              width="40px">
+          </a>
+        </div>
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'>
+      </div>
+          </label>
+              <ul class="menu" >
+                  <li class="nav-item neon-button1">
+                    <a class="nav-link " aria-current="page" href="#bookmark">Home</a>
+                  </li>
+                  <li class="nav-item neon-button1">
+                    <a class="nav-link" href="#aboutMe">My Profile</a>
+                  </li>
+                  <li class="nav-item neon-button1">
+                      <a class="nav-link" href="#myProjects">My Projects</a>
+                    </li>
+                  <li class="nav-item neon-button1">
+                      <a class="nav-link" href="#contactMe">Contact Me!</a>
+                  </li>
+              </ul>
+  </nav>
+</div>
+</header>
+
+                                        <!-- HERO IMAGE -->  
+<div class="hero-image">
+  <img class="hero-bg" 
+       id="bookmark" 
+       src="https://ryecode.github.io/portfolio/ImageBank/heroBG.jpg" 
+       alt="Hero BG">
+  <div class="hero-text">
+      <h1 class="hero-title">
+          <b>I'am Ryan Corral</b>
+      </h1>
+      <p class="subtitle ">And I'm a Full Stack Web Developer</p>
+      <button class="neon-button"
+              style="background-image: url('https://ryecode.github.io/portfolio/ImageBank/blueCarbonBG.jpg');" >
+        <a style="text-decoration: none; 
+                  text-shadow: none;
+                  color: red;"
+           href="https://ryecode.github.io/portfolio/ImageBank/RyanCorral_Resume.pdf" target="_blank"> 
+           HIRE ME 
+        </a> 
+      </button>
+  </div>
+</div>
+
+                                        <!-- MAIN CONTENTS -->  
+
+                                        <!-- LANDING / CTA -->  
+<div id="container">
+    <div class="logoSpin" 
+         id="spinner" 
+         style="margin-top: 20px;" >
+      <img class="loading" 
+           src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png" 
+           alt="Rye Logo v2 image">
+    </div>
+
+    <div class="row" 
+         style="margin: 0px 5px 30px 5px;
+                color: black;">
+      <div class="col-sm-6 mb-3 mb-sm-0" 
+           style="animation: crashLeft 3s ease-in calc(var(--typewriterSpeed) + 1s) forwards; 
+                  animation-iteration-count: initial; 
+                  text-align: center; 
+                  transform: translateX(-110%);">
+        <div class="card1" style="width: 100%;" >
+          <div class="card" style="height: 300px;">
+            <img src="https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png" 
+                 alt="galaxy image" 
+                 class="cardImage">
+            <div class="cardBody">
+              <div class="welcome">
+                <h1><b>WELCOME!</b></h1>
+              </div>
+              <p class="cardText" 
+                 style="padding-left: 5px; 
+                        padding-right: 5px;">
+                <span style="font-size: small; 
+                             color: rgba(240, 248, 255, 0.749); 
+                             margin-top: 5px;
+                             text-shadow: black;">
+                             Tap on the box to read better!
+                </span>
+                <br>
+                Please do check out this website of mine. A humble little space for my personal universe to showcase my creations, skills and achievements. As I share with you things that I experienced along the way, and take the path to become a full pledged Full-Stack Web Developer. Enjoy!                                   
+              </p>  
+            </div>
+          </div>
+          <div class="sub">        
+            <a href="#aboutMe" class="neon-button2 btn btn-primary" id="moreBtn">
+              KNOW MORE ABOUT ME
+            </a>       
+          </div>
+        </div>
+      </div>  
+ 
+      <div class="col-sm-6" 
+           style="height: 400px;
+                  margin-top: 10px;">
+        <div class="sub">        
+          <a href="#myProjects"
+             class="neon-button2 btn btn-primary" 
+             id="moreBtn1">
+              SEE MY PROJECTS HERE
+          </a>       
+        </div>
+        <div class="card" 
+            style="height: 300px; 
+                    width: 100%;
+                    z-index: -1;
+                    animation: crashRight 3s ease-in calc(var(--typewriterSpeed) + 1.1s) forwards;
+                    animation-iteration-count: initial;
+                    transform: translateX(120%);">
+          <img src="https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg" 
+               alt="carousel background image" 
+               class="cardImage">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-pause="click" >
+              <div class="carousel-inner">
+                <div class="carousel-item"  
+                     data-bs-interval="3000"
+                     id="logoQuery" 
+                     style="width: 40%;
+                            height: 70%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png" 
+                      class="d-block w-100" 
+                      alt="..."  
+                      style="margin-left: 200px;
+                             margin-top: 40px;
+                             height: 200px;">
+                </div>
+                <div class="carousel-item active"       
+                     data-bs-interval="3000"
+                     id="picQuery"
+                     style="width: 50%;
+                            height: 50%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/RyePicTech.png" 
+                      class="d-block w-100" 
+                      alt="..."                         
+                      style="margin-left: 170px;
+                             margin-right: 50px;
+                             margin-top: 30px;
+                             height: 240px;
+                             border-radius: 20px;">
+                </div>
+                <div class="carousel-item"    
+                     data-bs-interval="3000" 
+                     id="picQuery"
+                     style="width: 60%;
+                            height: 70%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/RyePortfolioPC.jpeg" 
+                      class="d-block w-100" 
+                      alt="..."  
+                      style="height: 245px;
+                             margin-left: 150px;
+                             margin-top: 25px;
+                             margin-right: 150px;
+                             border-radius: 5px;">
+                </div>
+                <div class="carousel-item"    
+                     data-bs-interval="3000" 
+                     id="picQuery"
+                     style="width: 60%;
+                            height: 70%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/EtiketPC.jpeg" 
+                      class="d-block w-100" 
+                      alt="..."  
+                      style="height: 245px;
+                             margin-left: 150px;
+                             margin-top: 25px;
+                             margin-right: 150px;
+                             border-radius: 5px;">
+                </div>
+                <div class="carousel-item"  
+                     data-bs-interval="3000"
+                     id="tictacPicQuery" 
+                     style="width: 40%;
+                            height: 70%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/RyeTicTacToeSS.jpeg" 
+                      class="d-block w-100" 
+                      alt="..."  
+                      style="height: 245px;
+                             margin-left: 220px;
+                             margin-top: 25px;
+                             margin-right: 80px;">
+                </div>
+                <div class="carousel-item"  
+                     data-bs-interval="3000" 
+                     id="skillsPicQuery"
+                     style="width: 60%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/codingSkills.jpeg" 
+                      class="d-block w-100" 
+                      alt="..."  
+                      style="margin-left: 150px;
+                             margin-top: 50px;
+                             margin-right: 150px;
+                             border-radius: 5px;">
+                </div>
+                <div class="carousel-item"  
+                     data-bs-interval="3000" 
+                     id="skillsPicQuery"
+                     style="width: 60%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg" 
+                      class="d-block w-100" 
+                      alt="..."  
+                      style="margin-left: 150px;
+                             margin-top: 50px;
+                             margin-right: 150px;
+                             border-radius: 5px;
+                             height: 200px;">
+                </div>
+                <div class="carousel-item"  
+                     data-bs-interval="3000" 
+                     id="skillsPicQuery"
+                    style="width: 60%;">
+                  <img src="https://ryecode.github.io/portfolio/ImageBank/BestCodingSS.jpg" 
+                      class="d-block w-100" 
+                      alt="..."  
+                      style="margin-left: 150px;
+                      margin-top: 50px;
+                      margin-right: 150px;
+                      border-radius: 50px;
+                      height: 200px;">
+                </div>
+              </div>
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>         -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+                                        <!-- MY PROFILE -->  
+      <div class="cardProfile card" 
+           id="aboutMe"
+           style="position: relative;     
+           margin: 25px 0px 250px 0px;
+           padding: 0;
+           background-image: url('https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png');
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           text-align: center;
+           box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);">
+        <div>
+          <h1 class="profileTitle"> 
+            MY PROFILE...  
+          </h1>        
+        <h3 style="color: black;">
+            <img id="ryePic" src="https://ryecode.github.io/portfolio/ImageBank/RyePicTech.png">
+          <p 
+            style=" margin-left: 20px ;
+            margin-right: 20px;
+            font-weight: 900;
+            color: black;
+            text-shadow: 
+            0 0 0.5em hsl(45, 100%, 53%),
+            0 0 2em hsl(45, 100%, 53%);
+            opacity: 1;
+            width: 90%;">
+                Greetings I'am Ryan Corral, a former call-center agent, now turned to a Full-Stack Web Developer after recently graduating from KodeGo Full-Stack Web Development Bootcamp.  
+              <br><br>
+              Even since high school, I noticed that I can pick-up technology very quickly and I'm very comfortable jumping into different platforms and various code bases. The very first program I coded was using Turbo Pascal (from Jurassic period haha!). Back then, learning to code using only google to search forums and tutorials was very tiring for many, but for me it was so much fun, and fullfilling!
+              <br><br>
+                Now my coding prowess was somewhat updated with the latest programming languages after the bootcamp. I'am hoping, I can get a chance to work for a good IT company where I can showcase my skills and love for coding. Also get a chance to expand my knowledge and learn more about programming.                
+          </p>
+        </h3>
+        </div>
+          <p style="color: black; margin-top: 15px; width: 80%;">            
+          <!-- ACCORDION -->
+          <section class="" style="width: 90%;
+                          margin-left: 5%;
+                          margin-bottom: 20px;">
+            <div class="accordion accordion-flush" 
+                 id="accordionFlushExample" 
+                 style="color: black; 
+                        width: 100px; 
+                        display: inline; 
+                        position: relative; 
+                        z-index: 1;
+                        margin-bottom: 50px;">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" 
+                          type="button" 
+                          data-bs-toggle="collapse" 
+                          data-bs-target="#flush-collapseTwo" 
+                          aria-expanded="false" 
+                          aria-controls="flush-collapseTwo" 
+                          style="color: black;">
+                    <b>PROGRAMMING SKILLS</b>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" 
+                     class="accordion-collapse collapse" 
+                     aria-labelledby="flush-headingTwo" 
+                     data-bs-parent="#accordionFlushExample" >
+                  <div class="accordion-body" > 
+                    <p style="margin-left: 10px;"><b>Hover or Tap over the Skills box for a TREAT!</b></p>
+                    <div class="tilt-box-wrap" style="width: 60%;text-align: center; margin-left: 15%;">
+                      <span class="t_over"></span>
+                      <span class="t_over"></span>
+                      <span class="t_over"></span>
+                      <span class="t_over"></span>
+                      <span class="t_over"></span>
+                      <span class="t_over"></span>
+                      <span class="t_over"></span>
+                      <span class="t_over"></span>
+                      <span class="t_over"></span>
+                      <div class="tilt-box">
+                          <img style="width: 90%;" src="https://ryecode.github.io/portfolio/ImageBank/codingSkills.jpeg"></img>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne" >
+                    <button class="accordion-button collapsed" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#flush-collapseOne" 
+                            aria-expanded="false" 
+                            aria-controls="flush-collapseOne" 
+                            style="color: black;">
+                      <b>EDUCATIONAL ATTAINMENT</b>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" 
+                       class="accordion-collapse collapse" 
+                       aria-labelledby="flush-headingOne" 
+                       data-bs-parent="#accordionFlushExample" 
+                       style="color: black;">
+                    <div class="accordion-body" style="margin-left: -20px; color: black;">
+                        <ul>
+                            <b>■ ONLINE BOOTCAMP</b>
+                                <p>
+                                  <a href="https://kodego.ph/" target="_blank">
+                                    KodeGo PH (Globe Capital Ventures Holdings, Inc.)
+                                 </a>
+                                <br> Full Stack Web Development
+                                <br> (February 2023-July 2023)
+                                <br> Bootcamp Award: 
+                                <br> <a href="https://youtu.be/Hq0qzBNZzQA" target="_blank"> Best Coding Award </a>
+                                <br> Capstone Project: 
+                                <br> <a href="https://etiket-com-mu.vercel.app/" target="_blank"> Etiket.com </a>
+                                </p>
+                            
+                            <b>■ VOCATIONAL DIPLOMA</b>
+                                <p>
+                                    St. Peter Velle Technical Training Center (TESDA Accredited)
+                                <br> Automotive Servicing National Certificate I and II
+                                <br> (2018-2019)
+                                </p>
+                            
+                            <b>■ COLLEGE DEGREE</b>
+                                <p>
+                                    AMA University
+                                <br> BS Electronics and Communications Engineering
+                                <br> (2001-2004) (2010-2011)
+                                </p>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#flush-collapseFour" 
+                            aria-expanded="false" 
+                            aria-controls="flush-collapseFour" 
+                            style="color: black;">
+                      <b>WORK EXPERIENCE</b>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" 
+                       class="accordion-collapse collapse" 
+                       aria-labelledby="flush-headingFour" 
+                       data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body" style="margin-left: -20px; color: black;">
+                        <ul>
+                            <b>■ TECHNICAL SUPPORT REPRESENTATIVE </b>
+                                <p>
+                                    Teleperformance - Antipolo
+                                <br>AT&T Mobility Technical Support Representative 
+                                <br>(January 2022 - March 2023)
+                                <br>AT&T DirecTv Technical Support Representative 
+                                <br>(November 2020 - January 2022)
+                                <br>AT&T Uverse Fiber Internet Technical Support Representative 
+                                <br>(March 2020 - November 2020)
+                                </p>                                
+                            <b>■ MANAGER </b>
+                                  <p>
+                                      PCSO Accredited Lotto and Keno Outlet
+                                  <br>(2009-2020)
+                                  </p>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#flush-collapseThree" 
+                            aria-expanded="false" 
+                            aria-controls="flush-collapseThree" 
+                            style="color: black;">
+                      <b>MY CERTIFICATES</b>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" 
+                       class="accordion-collapse collapse" 
+                       aria-labelledby="flush-headingThree" 
+                       data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body" style="margin-left: 10px; text-align: center;">
+                      
+                        <div>
+                            <!-- <div class="col-sm-6 mb-3 mb-sm-0"> -->
+                              <div >
+                                <div class="card-body">
+                                  <h5 class="card-title">KodeGo Full-Stack Web Development Bootcamp</h5>
+                                  <p class="card-text"> 
+                                    <img  class="cardContainer" src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg" alt="Diploma Picture"> </p>
+                                </div>
+                              </div>
+                            <!-- </div> -->
+                            <!-- <div class="col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">My Certificate #2</h5>
+                                  <p class="card-text"> <img class="cardContainer" src="https://ryecorral.github.io/ImageBank/Certificate2s02.png" alt=""> </p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                            </div> -->
+                          </div>
+                    </div>
+                </div>   
+          </section>              
+          </p>
+      </div>
+      
+                                        <!-- MY PROJECTS  -->  
+<div class="cardProfile about" 
+     id="myProjects"
+     style="background-image: url('https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin-bottom: 250px;">
+<div>
+  <h1 class="profileTitle" 
+      style="margin-top: 30px;
+             margin-bottom: 50px;"> 
+     MY PROJECTS   
+  </h1>
+</div>
+  <div class="row row-cols-1 row-cols-md-4 g-4"
+       style="text-align: center;">
+    <div class="col">
+      <div class="cards">
+        <img class="card-image" 
+             src="https://ryecode.github.io/portfolio/ImageBank/RyePortfolioSS.jpeg">
+        <div class="hover-container">
+          <p class="hover-header"
+             style="opacity: 0;
+                    animation: scale 5s linear 0s forwards;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    color: black;
+                    font-weight: 900;
+                    text-align: center;
+                    margin: 0px 0 0 0;
+                    width: 100%;">
+            Rye Portfolio
+          </p>
+          <a class="hover-btn" 
+          href="https://ryecode.github.io/portfolio/home" 
+          target="_blank">
+         Visit Website
+       </a>
+       <p class="hover-description">
+         This was my first mini-project during our KodeGo bootcamp. It's a single-page website which I built with HTML, Bootstrap v5.3 and CSS. I had to admit this kind of website showed me what I need to improve, and that is content creation! hahaha! I really had a hard time thinking of what to write for my portfolio's contents... LOL~ 
+       </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="cards">
+        <img class="card-image" 
+             src="https://ryecode.github.io/portfolio/ImageBank/EtiketSS.jpeg">
+        <div class="hover-container">
+          <p class="hover-header"
+             style="opacity: 0;
+                    animation: scale 5s linear 0s forwards;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    color: black;
+                    font-weight: 900;
+                    text-align: center;
+                    margin: 0px 0 0 0;
+                    width: 100%;">
+            Etiket.com
+          </p>
+            <a class="hover-btn" 
+               href="https://etiket-com-mu.vercel.app/" 
+               target="_blank">
+              Visit Website
+            </a>
+            <p class="hover-description">
+              For this project, I created the whole backend, the database implementation, and deployment of the website.
+            <br> 
+            <br>
+              This is our collaboration capstone project of Team IceCode during KodeGo bootcamp. It was built using React, Node, Express, MongoDB, Mongoose, some Bootstrap v5.3, React Bootstrap v2.9.0 and old fashioned CSS. Then it was deployed using Vercel. 
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="cards">
+        <img class="card-image" 
+             src="https://ryecode.github.io/portfolio/ImageBank/RyeTicTacToeSS.jpeg">
+        <div class="hover-container">
+          <p class="hover-header"
+             style="opacity: 0;
+                    animation: scale 5s linear 0s forwards;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    color: black;
+                    font-weight: 900;
+                    text-align: center;
+                    margin: 0px 0 0 0;
+                    width: 100%;">
+               Rye TicTacToe
+            </p>
+            <a class="hover-btn" 
+               href="https://ryetictactoe.vercel.app/" 
+               target="_blank">
+              Visit Website
+            </a>
+            <p class="hover-description">
+              This is a mini game I created for my KodeGo technical exam. I built it purely with React and JavaScript. Then I deployed it using Vercel. I'm just very fond of this one because I figured out on my own most parts of the logic needed for it to work properly. And I'm planning to level up this game with more css effects, animations, and more functionality. 
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="cards"
+           style="background-color: black;">
+        <img class="card-image" 
+             src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png"
+             style="width: 40%;">
+        <div class="hover-container">
+          <p class="hover-header"
+             style="opacity: 0;
+                    animation: scale 5s linear 0s forwards;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    color: black;
+                    font-weight: 900;
+                    text-align: center;
+                    margin: 0px 0 0 0;
+                    width: 100%;">
+            cvhacker.com
+          </p>
+            <a class="hover-btn" 
+               href="https://ryetictactoe.vercel.app/" 
+               target="_blank">
+              Visit Website
+            </a>
+            <p class="hover-description">
+              This is my second mini-project during the KodeGo  bootcamp. Unfortunately the github for this website was ruined and I decided to recreate a more advance version of it using React.
+            <br>
+              I'm currently reconstructing and migrating this website so stay tuned for the relaunching of this website soon!
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                                        <!-- CONTACT ME-->  
+  <div class="card about" 
+  id="contactMe"
+  style="background-image: url('https://ryecode.github.io/portfolio/ImageBank/ContactBG.jpg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin-bottom: 0px;">
+<div>
+  <h1 class="aboutTitle"> 
+      CONTACT ME
+  </h1>
+</div>
+  <p style="color: black;">
+      Hover or Tap on the cards and icons!
+  </p>
+<div class="row" 
+    style="margin: 10px 5px 10px -25px;
+            color: aliceblue;">
+  <div class="col-sm-6 mb-3 mb-sm-0" 
+      style="animation: crashLeft 3s ease-in calc(var(--typewriterSpeed) + 1s) forwards; 
+              animation-iteration-count: initial; 
+              text-align: center; 
+              transform: translateX(-110%);
+              z-index: 1;">
+    <div class="tilt-box-wrap">
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+      <span class="t_over"></span>
+        <div class="tilt-box">
+          <img src="https://ryecode.github.io/portfolio/ImageBank/resumeSS.jpeg" 
+              width="80%" 
+              height="100%">
+          </img>
+        </div>
+    </div>
+        <p style="animation: crashLeft 3s ease-in calc(var(--typewriterSpeed) + 2s) forwards; 
+                  animation-iteration-count: initial; 
+                  text-align: center; 
+                  transform: translateX(-110%); 
+                  color: black; 
+                  margin-top: 10px;
+                  z-index: 1;">
+                    Download the PDF file 
+                    <a href="https://ryecode.github.io/portfolio/ImageBank/ryeResume.pdf"   
+                      target="_blank">here
+                    </a>.
+        </p>
+  </div>    
+    <div class="col-sm-6" 
+        style="height: 470px;
+                z-index: 1;">
+  <div class="sub"
+      style="z-index: 1;
+            width: 80%;">
+    <a href="tel:+639179219988">
+      <img class="subscribe" 
+          src="https://ryecode.github.io/portfolio/ImageBank/phonePic.png" 
+          alt="phone icon"  
+          width="20%">
+    </a>
+    <a href="mailto:mr.ryan.corral@gmail.com">
+      <img class="subscribe" 
+          src="https://ryecode.github.io/portfolio/ImageBank/emailPic.png" 
+          alt="email icon"  
+          width="20%">
+    </a>
+    <a href="https://www.linkedin.com/in/rye-corral/" target="_blank">
+      <img class="subscribe" 
+          src="https://ryecode.github.io/portfolio/ImageBank/linkedPic.png" 
+          alt="linkedIn icon"  
+          width="25%">
+    </a>
+    <a href="https://www.facebook.com/ryekoralzkie" target="_blank">
+      <img class="subscribe" 
+          src="https://ryecode.github.io/portfolio/ImageBank/fbPic.png" 
+          alt="facebook icon"  
+          width="20%">
+    </a>
+  </div>
+      <div class="card" 
+          id="contactCardQuery"
+          style="height: 350px; 
+                  width: 100%;animation: 
+                  crashRight 3s ease-in calc(var(--typewriterSpeed) + 1.1s) forwards; 
+                  animation-iteration-count: initial;
+                  transform: translateX(120%);
+                  z-index: 1;
+                  margin-top: 0px;">                  
+        <img class="cardImage" 
+            src="https://ryecode.github.io/portfolio/ImageBank/blueCarbonBG.jpg" 
+            alt="background image">  
+        <p>
+          <img id="cardQuery" 
+              src="https://ryecode.github.io/portfolio/ImageBank/contactDetails.png"
+              style="text-align: center;
+                      margin-top: 35px;
+                      width: 80%;
+                      z-index: 1;
+                      opacity: 1;">
+        </p>
+      </div>
+
+    </div>
+</div>
+
+</div>
+
+
+</div>
+                                         <!-- FOOTER -->
+<footer  id="footer">
+  <div class="copyright"> &#8592 © Ryan Corral 2023 	&#8594</div>
+  <div class="row row-cols-2 row-cols-md-3 g-4" style="display: flex; align-items: start; justify-content: space-between;">
+    <div class="attribute"> 
+    Background images: <br><a href="http://www.pngtree.com" target="_blank">pngtree.com</a> & <a href="https://www.vecteezy.com/" target="_blank">vecteezy.com</a>
+    </div>
+    <div id="back2Top">
+      <button class="neon-button2"> <a href="#bookmark" style="text-decoration: none;color: rgb(255, 255, 255);"> Back to Top </a></button>
+    </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+        crossorigin="anonymous">
+</script>
+</body>
+</html>
