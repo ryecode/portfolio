@@ -175,7 +175,7 @@ body {
 
 .neon-button:hover, 
 .neon-button:focus {    
-  color: blue;
+  color: black;
   text-shadow: none;    
 }
 
@@ -395,8 +395,6 @@ body {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-
-
 }
 
 .accordion-body{
@@ -465,7 +463,7 @@ body {
     animation: scale 5s ease 
     calc(var(--typewriterSpeed) + 1.5s) forwards;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-timing-function: var(--typewriterSteps);
     color: black;
     font-weight: 900;
     text-shadow: 
@@ -558,7 +556,7 @@ body {
     animation: scale 5s ease 
     calc(var(--typewriterSpeed) + 1.5s) forwards;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-timing-function: var(--typewriterSteps);
     color: black;
     font-weight: 900;
     text-shadow: 
@@ -571,7 +569,7 @@ body {
 
   .cardProfile {
     position: relative;
-    margin: 15px 0px 250px 0px;
+    margin: 15px 0px 0px 0px;
     padding: 0;
     background: rgba(black, .7);
     text-align: center;
@@ -629,7 +627,6 @@ body {
   
   .cardImage 
   {
-
       display: flex;
       position: absolute;
       transition: opacity ease-out 250ms;
@@ -684,7 +681,7 @@ height: 250px;
 {
 position: relative;
 top: 85%;
-left: 20%;
+left: 25%;
 right: 0%;
 color: hsl(45, 100%, 53%);
 text-shadow: 2 black;
@@ -705,6 +702,7 @@ text-shadow:
 0 0 0;
 box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);
 }
+
 #moreBtn::before {
 pointer-events: none; /*use this string to avoid pointer change outside button */
 content: '';
@@ -736,7 +734,7 @@ z-index: -1;
 
 #moreBtn:hover, 
 #moreBtn:focus {    
-color: aliceblue;
+color: black;
 text-shadow: 0 0 0.1em black;    
 }
 
@@ -754,7 +752,7 @@ opacity: 1;
 {
 position: relative;
 top: 90%;
-left: 5%;
+left: 25%;
 right: 0%;
 color: hsl(45, 100%, 53%);
 text-shadow: 2 black;
@@ -806,7 +804,7 @@ z-index: -1;
 
 #moreBtn1:hover, 
 #moreBtn1:focus {    
-color: aliceblue;
+color: black;
 text-shadow: 0 0 0.1em black;    
 }
 
@@ -846,7 +844,7 @@ opacity: 1;
 
 #moreBtn1
 {
-  left: 5%;
+  left: -2%;
   color: hsl(45, 100%, 53%);
   text-shadow: 2 black;
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
@@ -905,6 +903,7 @@ transform: translatex(100%);
 animation: scale 1s ease-in-out 
 0.5s forwards;
 background: transparent;
+border: none;
 margin-top: 10px;
 margin-left: 30px;
 padding-top: 0px;
@@ -936,11 +935,10 @@ display: flexbox;
   width: max-content;
   color: black;
   text-shadow: 
-  0 0 0.11em hsl(45, 100%, 53%),
+  0 0 0.11em whitesmoke,
   0 0 1em hsl(45, 100%, 53%);
+  text-align: center;
   padding-top: 20px;
-  margin-top: 10px;
-  margin-left: 580px;
   padding-left: 10px;
   padding-right: 10px;
   background-color: rgba(237, 232, 232, 0.987);
@@ -951,10 +949,10 @@ display: flexbox;
   height: 105px;
   animation: scale 5s linear 0s forwards;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+  margin-left: 25px;
 }
-/* 
+
 .aboutTitle::before,
 .aboutTitle::after {
   content: '';
@@ -965,14 +963,10 @@ display: flexbox;
   left: 0;
 }
 
-.aboutTitle::before {
-  background-color: rgba(237, 232, 232, 0.987);
-  border-radius: 10px;
-  border: solid white ;
-  border-width: 1px;
-  box-shadow: -1px 5px 0.1em rgba(40, 39, 39, 0.528);
-  height: 105px;
-  transform: translateY(-5px);
+/* .aboutTitle::before {
+  background-color: rgb(53, 40, 1);
+  height: 120px;
+  transform: translateY(-10px);
   animation: typewriter 5s steps(17) 2s forwards;
   animation-iteration-count: infinite;
   animation-timing-function: var(--typewriterSteps);
@@ -1007,7 +1001,6 @@ color: black;
 text-shadow: 
 0 0 0.11em hsl(45, 100%, 53%),
 0 0 1em hsl(45, 100%, 53%);
-
 font-weight: 600;
 font-size: 0.95em;
 opacity: 1;
@@ -1049,20 +1042,6 @@ opacity: 1;
   margin-left: -90px;
 }
 
-#projectsQuery {
-  transform: translateX(-100px);
-}
-
-#heroQuery {
-  width: 100%;
-}
-
-.back2TopQuery
-{
-  text-align: right;
-  margin-top: 5px;
-}
-
 }
 
 #cardQuery {
@@ -1073,15 +1052,16 @@ opacity: 1;
 /* ///////////////////////////////// PROJECTS SECTION /////////////////////////////////  */
 
 .cards {
-width: 325px;
-height: 550px;
+width: 300px;
+height: 500px;
 position: relative;
 isolation: isolate;
 overflow: hidden;
 border-radius: 20px;
-margin-left: 15px;
+margin-left: 25px;
 z-index: 1;
 }
+
 .card-image {
 height: 100%;
 width: auto;
@@ -1090,6 +1070,7 @@ position: absolute;
 inset: 0;
 z-index: -1;
 }
+
 .hover-container {
 position: absolute;
 bottom: 0;
@@ -1099,7 +1080,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 padding: 10px;
-padding-top: 60%;
+padding-top: 70%;
 background-image: linear-gradient(0,rgba(240, 169, 1, 0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.9),rgb(240, 169, 1,0.7),rgb(240, 169, 1,0.4),rgb(240, 169, 1,0.2),rgb(240, 169, 1,0.1),transparent);
 color: black;
 opacity: 0;
@@ -1123,10 +1104,10 @@ border-radius: 25px;
 background-color: white;
 height: 30px;
 text-decoration: none;
-font-size: 25px;
+font-size: 20px;
 font-weight: 500;
 box-sizing: content-box;
-padding:5px 5px;
+padding:5px 10px;
 }
 .hover-description {
 width: 100%;
@@ -1140,7 +1121,7 @@ color: black;
   {
     background-color: #504f4f;
     position: relative;
-    height: 120px;
+    height: 50px;
     margin-top: 10px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -1167,8 +1148,6 @@ color: black;
   {
     text-align: right;
     margin-top: 5px;
-    transform: translateY(-80%);
-
   }
 
 .neon-button2,
@@ -1180,7 +1159,7 @@ color: black;
 
 .neon-button2 {
     background-color: transparent;
-    font-size: 1.5rem;
+    font-size: 0.75rem;
     font-family:'Source Sans Pro', sans-serif;
     color: rgb(0, 7, 13);
     display: inline-block;
