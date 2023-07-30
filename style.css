@@ -464,7 +464,7 @@ body {
     animation: scale 5s ease 
     calc(var(--typewriterSpeed) + 1.5s) forwards;
     animation-iteration-count: infinite;
-    animation-timing-function: var(--typewriterSteps);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     color: black;
     font-weight: 900;
     text-shadow: 
@@ -557,7 +557,7 @@ body {
     animation: scale 5s ease 
     calc(var(--typewriterSpeed) + 1.5s) forwards;
     animation-iteration-count: infinite;
-    animation-timing-function: var(--typewriterSteps);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     color: rgb(255, 255, 255);
     font-weight: 900;
     text-shadow: 
