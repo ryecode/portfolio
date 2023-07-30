@@ -558,7 +558,7 @@ body {
     calc(var(--typewriterSpeed) + 1.5s) forwards;
     animation-iteration-count: infinite;
     animation-timing-function: var(--typewriterSteps);
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 900;
     text-shadow: 
     0 0 0.5em hsl(45, 100%, 53%),
@@ -572,7 +572,7 @@ body {
     position: relative;
     margin: 15px 0px 0px 0px;
     padding: 0;
-    background: rgba(black, .7);
+    /* background: rgba(aliceblue, .7); */
     text-align: center;
     box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);
 }
@@ -616,8 +616,9 @@ body {
 }
 .cardProfile:hover
 {
-    opacity: 0.4;
     opacity: 1;
+    background: rgba(240, 248, 255, 0.871);
+    z-index: 1;
 }
 
   
@@ -641,9 +642,9 @@ body {
       border: none;
   }
   /* to make text more readable */
-  .card:hover .cardImage
+  .card:hover .cardImage 
   {
-      opacity: 0.3;
+      opacity: 0.5;
   }
 
   .cardText
@@ -964,16 +965,6 @@ display: flexbox;
   left: 0;
 }
 
-/* .aboutTitle::before {
-  background-color: rgb(53, 40, 1);
-  height: 120px;
-  transform: translateY(-10px);
-  animation: typewriter 5s steps(17) 2s forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: var(--typewriterSteps);
-  
-} */
-
 #ryePic {
 float: center;
 width: 20%;
@@ -996,16 +987,16 @@ margin-bottom: 10px;
 display: flex;
 }
 
-.profileText
+/* .profileText
 {
-color: black;
+color: rgb(255, 255, 255);
 text-shadow: 
 0 0 0.11em hsl(45, 100%, 53%),
 0 0 1em hsl(45, 100%, 53%);
 font-weight: 600;
 font-size: 0.95em;
 opacity: 1;
-}
+} */
 
 @media (max-width: 770px) {
 #ryePic {
@@ -1043,10 +1034,9 @@ opacity: 1;
   margin-left: -90px;
 }
 
-.aboutMe 
+.aboutRye 
 {
   transform: translateX(-35px);
-
 }
 
 }
