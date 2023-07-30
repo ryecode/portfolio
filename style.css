@@ -347,6 +347,7 @@ body {
   transform: rotate(-45deg);
 }
 
+
 @media (max-width: 770px) 
 {
   .menu-button-container 
@@ -1040,6 +1041,12 @@ opacity: 1;
   width:198px;
   height:198px;
   margin-left: -90px;
+}
+
+.aboutMe 
+{
+  transform: translateX(-35px);
+
 }
 
 }
