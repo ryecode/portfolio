@@ -653,7 +653,7 @@ body {
   /* to make text more readable */
   .card:hover .cardImage 
   {
-      opacity: 0.5;
+      opacity: 0.2;
   }
 
   .cardText
@@ -1125,9 +1125,9 @@ color: black;
 
   #footer
   {
-    background-color: #504f4f;
+    background: linear-gradient(to right, rgba(4, 4, 4, 0.875), rgba(32, 32, 31, 0.873));
     position: relative;
-    height: 50px;
+    height: 110px;
     margin-top: 10px;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -1153,7 +1153,7 @@ color: black;
   #back2Top
   {
     text-align: right;
-    margin-top: 5px;
+    margin-top: 0;
   }
 
 .neon-button2,
