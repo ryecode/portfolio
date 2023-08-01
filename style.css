@@ -550,11 +550,19 @@ body {
 
   .certificate {
     position: relative;
-    margin: 15px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     padding: 0;
     background: rgba(black, .7);
     text-align: center;
     box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);
+    transform: translateX(10%);
+}
+
+@media (max-width: 770px) {
+.certificate {
+  transform: translateX(-20%);
+}
+
 }
 
 /* FOR MY PROFILE */
@@ -832,7 +840,7 @@ opacity: 1;
 @media (max-width: 770px) {
 #moreBtn 
 {
-  left: -1.5%;
+  left: -3%;
   color: hsl(45, 100%, 53%);
   text-shadow: 2 black;
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/galaxyBG.png");
@@ -855,7 +863,7 @@ opacity: 1;
 
 #moreBtn1
 {
-  left: -2%;
+  left: -1%;
   color: hsl(45, 100%, 53%);
   text-shadow: 2 black;
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
@@ -950,8 +958,8 @@ display: flexbox;
   0 0 1em hsl(208, 88%, 77%); */
   text-align: center;
   padding-top: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: rgba(237, 232, 232, 0.987);
   border-radius: 10px;
   border: solid white ;
@@ -961,7 +969,7 @@ display: flexbox;
   animation: scale 5s linear 0s forwards;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);  
-  margin-left: 25px;
+  margin-left: 1%;
 }
 
 .aboutTitle::before,
@@ -1046,7 +1054,7 @@ opacity: 1;
 
 .aboutRye 
 {
-  transform: translateX(-39.5px);
+  transform: translateX(-14px);
 }
 
 }
