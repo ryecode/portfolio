@@ -863,7 +863,7 @@ opacity: 1;
 
 #moreBtn1
 {
-  left: -1%;
+  left: 3.25%;
   color: hsl(45, 100%, 53%);
   text-shadow: 2 black;
   background-image: url("https://ryecode.github.io/portfolio/ImageBank/ProjectsBG.jpg");
@@ -993,6 +993,8 @@ margin-top: 10px;
 animation: flip 5s;
 animation-iteration-count: infinite;
 box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%); 
+border: 5px hsl(45, 100%, 53%);
+border-style: ridge;
 }
 
 #skills {
@@ -1054,7 +1056,7 @@ opacity: 1;
 
 .aboutRye 
 {
-  transform: translateX(-14px);
+  transform: translateX(-25px);
 }
 
 }
