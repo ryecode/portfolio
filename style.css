@@ -429,41 +429,6 @@ body {
   scale: 1.35;
 }
 
-.RyeLogoMarqueeRight
-{
-  border-radius: 50%;  
-  margin-left: 0px;
-  -webkit-animation: logoSpin 4s linear infinite;
-  -moz-animation: logoSpin 4s linear infinite;
-  animation: logoSpin 4s linear infinite;
-  opacity: 1;
-  box-shadow: 0 0 1em hsl(45, 100%, 53%);
-}
-
-.RyeLogoMarqueeRight:hover
-{
-  border-radius: 50%;  
-  scale: 1.25;
-}
-
-.RyeLogoMarqueeLeft
-{
-  border-radius: 50%;  
-  margin-left: 0px;
-  -webkit-animation: logoSpinLeft 4s linear infinite;
-  -moz-animation: logoSpinLeft 4s linear infinite;
-  animation: logoSpinLeft 4s linear infinite;
-  opacity: 1;
-  box-shadow: 0 0 1em hsl(45, 100%, 53%);
-}
-
-.RyeLogoMarqueeLeft:hover
-{
-  border-radius: 50%;  
-  scale: 1.25;
-}
-
-
 /* ///////////////////////////////// LOADING ANIMATION ////////////////// */
   .loading
     {
@@ -508,6 +473,40 @@ body {
     text-align: center;
     margin: 2px 0 0px 0;
     width: 100%;
+  }
+
+  .RyeLogoMarqueeRight
+  {
+    border-radius: 50%;  
+    margin-left: 0px;
+    -webkit-animation: rollOverRight 4s linear infinite;
+    -moz-animation: rollOverRight 4s linear infinite;
+    animation: rollOverRight 4s linear infinite;
+    opacity: 1;
+    box-shadow: 0 0 1em hsl(45, 100%, 53%);
+  }
+  
+  .RyeLogoMarqueeRight:hover
+  {
+    border-radius: 50%;  
+    scale: 1.25;
+  }
+  
+  .RyeLogoMarqueeLeft
+  {
+    border-radius: 50%;  
+    margin-left: 0px;
+    -webkit-animation: rollOverLeft 4s linear infinite;
+    -moz-animation: rollOverLeft 4s linear infinite;
+    animation: rollOverLeft 4s linear infinite;
+    opacity: 1;
+    box-shadow: 0 0 1em hsl(45, 100%, 53%);
+  }
+  
+  .RyeLogoMarqueeLeft:hover
+  {
+    border-radius: 50%;  
+    scale: 1.25;
   }
 
   /* ///////////////////////////////// CONTENT /////////////////////////////////  */
@@ -583,8 +582,7 @@ body {
       transform: scale(1, 1.05);
   }
 
-  .certificate 
-  {
+  .certificate {
     position: relative;
     margin: 30px 0px 0px 0px;
     padding: 0;
@@ -592,9 +590,7 @@ body {
     text-align: center;
     box-shadow: 0 0 0.5em 0 hsl(45, 100%, 53%);
     transform: translateX(10%);
-    border: 5px hsl(45, 100%, 53%);
-    border-style: ridge;
-  }
+}
 
 @media (max-width: 770px) {
 .certificate {
@@ -715,7 +711,7 @@ body {
     width: 90%;
 
     font-weight: 800;
-    font-size: 1.2em;
+    font-size: 0.95em;
     opacity: 1;
   }
 
@@ -1385,13 +1381,13 @@ to {opacity: 1;}
 100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-@-moz-keyframes logoSpin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes logoSpin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes logoSpin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes rollOverRight { 
+  0% { transform:  rotate(0deg); }
+  100% { transform: rotate(360deg); } }
 
-@-moz-keyframes logoSpinLeft { 100% { -moz-transform: rotate(-360deg); } }
-@-webkit-keyframes logoSpinLeft { 100% { -webkit-transform: rotate(-360deg); } }
-@keyframes logoSpinLeft { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg);
+@keyframes rollOverLeft { 
+  0% { transform:  rotate(0deg); }
+  100% { transform: rotate(-360deg);} }
 
 /* TILT BOX EFFECT */
 
