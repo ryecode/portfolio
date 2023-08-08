@@ -494,54 +494,115 @@
                        class="accordion-collapse collapse" 
                        aria-labelledby="flush-headingThree" 
                        data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body" style="margin-left: 25%;">
-                      
-                        <div class="row">
-                          <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="accordion-body" style="margin-left: 0.1%;">
+
+                        <section>      
+                            <div class="containerGallery" id="Gallery">
+                              <div class="mySlides">
+                                <h5 class="card-title" 
+                                    style="margin-top: 25px;">
+                                    <b>KodeGo Full-Stack Web Development Bootcamp</b>
+                                </h5>
+                                <img src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg" 
+                                     style="width:55%; 
+                                            border: 10px hsl(45, 100%, 53%); 
+                                            border-style: ridge;">
+                                <div class="numbertext">1 / 4</div>
+                              </div>
                             
-                              <div class="certificate" >
-                                <div class="card-body">
-                                  <h5 class="card-title">KodeGo Full-Stack Web Development Bootcamp</h5>
-                                  <p class="card-text"> 
-                                    <img  class="cardContainer" src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg" alt="Diploma Picture"> </p>
-                                </div>
+                              <div class="mySlides">
+                                <h5 class="card-title" 
+                                    style="margin-top: 25px;">
+                                    <b>TelePerformance AT&T Mobility Technical Support Training</b>
+                                </h5>                               
+                                <img src="https://ryecode.github.io/portfolio/ImageBank/ryeTP2.jpg"
+                                     style="width:45%; 
+                                            border: 10px hsl(45, 100%, 53%); 
+                                            border-style: ridge;">
+                                <div class="numbertext">2 / 4</div>
                               </div>
+                            
+                              <div class="mySlides">
+                                <h5 class="card-title" 
+                                    style="margin-top: 25px;">
+                                    <b>TelePerformance AT&T Unified Technical Care for Uverse and DirecTV Training</b>
+                                </h5>                               
+                                <img src="https://ryecode.github.io/portfolio/ImageBank/ryeTP1.jpg" 
+                                     style="width:45%; 
+                                            border: 10px hsl(45, 100%, 53%); 
+                                            border-style: ridge;">
+                                <div class="numbertext">3 / 4</div>
+                              </div>
+                                
+                              <div class="mySlides">
+                                <h5 class="card-title" 
+                                    style="margin-top: 25px;">
+                                    <b>ST.Peter Velle TTC, Inc. Automotive Servicing Training</b>
+                                </h5>
+                                <img src="https://ryecode.github.io/portfolio/ImageBank/ryeNC.jpg" 
+                                     style="width:45%; 
+                                            border: 10px hsl(45, 100%, 53%); 
+                                            border-style: ridge;">
+                                <div class="numbertext">4 / 4</div>
+                              </div>
+                                
+                              <a class="prev" onclick="plusSlides(-1)">&#11013</a>
+                              <a class="next" onclick="plusSlides(1)">&#10145</a>
 
-                            <div class="col-sm-6" style="width: 100%;">
-                              <div class="certificate">
-                                <div class="card-body">
-                                  <h5 class="card-title">TelePerformance AT&T Mobility Technical Support Training</h5>
-                                  <p class="card-text"> 
-                                    <img class="cardContainer" src="https://ryecode.github.io/portfolio/ImageBank/ryeTP2.jpg" alt="Mobility picture"> 
-                                  </p>
+                            
+                              <div class="row row-cols-4"
+                                   style="width: 100%;">
+                                <div class="column">
+                                  <img id="certPic" class="demo cursor" src="https://ryecode.github.io/portfolio/ImageBank/KodeGoDiploma.jpeg" style="width:60%" onclick="currentSlide(1)" alt="Photo 1">
+                                </div>
+                                <div class="column">
+                                  <img id="certPic" class="demo cursor" src="https://ryecode.github.io/portfolio/ImageBank/ryeTP2.jpg" style="width:50%" onclick="currentSlide(2)" alt="Photo 2">
+                                </div>
+                                <div class="column">
+                                  <img id="certPic" class="demo cursor" src="https://ryecode.github.io/portfolio/ImageBank/ryeTP1.jpg" style="width:50%" onclick="currentSlide(3)" alt="Photo 3">
+                                </div>
+                                <div class="column">
+                                  <img id="certPic" class="demo cursor" src="https://ryecode.github.io/portfolio/ImageBank/ryeNC.jpg" style="width:50%" onclick="currentSlide(4)" alt="Photo 4">
+                                </div>
+
+                              
                                 </div>
                               </div>
                             </div>
                             
-                            <div class="col-sm-6" style="width: 100%;">
-                              <div class="certificate">
-                                <div class="card-body">
-                                  <h5 class="card-title">TelePerformance AT&T Unified Technical Care for Uverse and DirecTV Training</h5>
-                                  <p class="card-text"> 
-                                    <img class="cardContainer" src="https://ryecode.github.io/portfolio/ImageBank/ryeTP1.jpg" alt="Mobility picture"> 
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
+                            <script>
+                            let slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              let i;
+                              let slides = document.getElementsByClassName("mySlides");
+                              let dots = document.getElementsByClassName("demo");
+                              let captionText = document.getElementById("caption");
+                              if (n > slides.length) {slideIndex = 1}
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";
+                              dots[slideIndex-1].className += " active";
+                              captionText.innerHTML = dots[slideIndex-1].alt;
+                            }
+                            </script>
+                        </section>
 
-                            <div class="col-sm-6" style="width: 100%;">
-                              <div class="certificate">
-                                <div class="card-body">
-                                  <h5 class="card-title">ST.Peter Velle TTC, Inc. Automotive Servicing Training</h5>
-                                  <p class="card-text"> 
-                                    <img class="cardContainer" src="https://ryecode.github.io/portfolio/ImageBank/ryeNC.jpg" alt="NC picture"> 
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
 
-                          </div>
-                        </div>
                     </div>
                 </div>   
           </section>              
@@ -823,25 +884,43 @@
                       opacity: 1;">
         </p>
       </div>
-
     </div>
 </div>
-
+</div>
 </div>
 
 
-</div>
                                          <!-- FOOTER -->
 <footer  id="footer">
   <div class="copyright">
-    <img src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png" width="10%">  © Ryan Corral 2023 	</div>
-  <div class="row row-cols-2 row-cols-md-3 g-4" style="display: flex; align-items: start; justify-content: space-between;">
-    <div class="attribute"> 
-    Background images: <br><a href="http://www.pngtree.com" target="_blank">pngtree.com</a> & <a href="https://www.vecteezy.com/" target="_blank">vecteezy.com</a>
-    </div>
+    <img src="https://ryecode.github.io/portfolio/ImageBank/RYELogoV2.png"
+         width="10%">  
+      <b>© RYAN CORRAL 2023</b> 	
+  </div>
+  <div class="row row-cols-2 row-cols-md-3 g-4" 
+       style="display: flex; 
+              align-items: start; 
+              justify-content: space-between;">
     <div id="back2Top">
-      <button class="neon-button2"> <a href="#bookmark" style="text-decoration: none;color: rgb(255, 255, 255);"> Back to Top </a></button>
+      <button class="neon-button2"> 
+        <a href="#bookmark" 
+           style="text-decoration: none;
+                  color: rgb(255, 255, 255);
+                  font-size: medium;"> 
+                  <b>Back to Top</b> 
+        </a>
+      </button>
     </div>
+    <div class="attribute"> 
+    Background images: 
+    <br>
+    <a href="http://www.pngtree.com" 
+       target="_blank">pngtree.com</a>
+        &
+    <a href="https://www.vecteezy.com/" 
+       target="_blank">vecteezy.com</a>
+    </div>
+
 </div>
 </footer>
 
