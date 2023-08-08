@@ -685,7 +685,7 @@ body {
       display: flex;
       position: absolute;
       transition: opacity ease-out 250ms;
-      opacity: 1;
+      opacity: 0.9;
       align-self: center;
       height: 100%;
       width: 100%;
@@ -697,7 +697,7 @@ body {
   /* to make text more readable */
   .card:hover .cardImage 
   {
-      opacity: 0.2;
+      opacity: 0.3;
   }
 
   .cardText
